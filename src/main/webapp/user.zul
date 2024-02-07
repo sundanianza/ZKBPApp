@@ -31,21 +31,21 @@
         }
         .admin-label {
 
-        background-color: #9ccc07; /* Green background color */
-        color: white; /* White text color */
+        background-color: #9ccc07;
+        color: white;
         font-size: 18px;
         font-weight: bold;
-        padding: 10px; /* Add padding for better appearance */
+        padding: 10px;
         }
         .header-space {
-        height: 50px; /* Adjust the height according to your preference */
+        height: 50px;
         }
         .header-link {
-        color: #CDCD32; /* Lime green text color */
+        color: #CDCD32;
         font-size: 18px;
         font-weight: bold;
         margin-right: 10px;
-        cursor: pointer; /* Add cursor style to indicate clickable */
+        cursor: pointer;
         }
 
     </style>
@@ -61,7 +61,7 @@
                 <label value="| Match" class="header-link" onClick="alert('Match clicked');" />
                 <label value="| ETL Control" class="header-link" onClick="alert('ETL Control clicked');" />
                 <label value="| Publish" class="header-link" onClick="alert('Publish clicked');" />
-                <label value="| CPM Posting" class="header-link" onClick="alert('CPM Posting clicked');" />
+                <label value="| CPM Posting |" class="header-link" onClick="alert('CPM Posting clicked');" />
             </hbox>
 
             <hbox class="fixed-header-buttons-t" style="float: right;">
@@ -84,6 +84,7 @@
             <!-- End of Header Section -->
 
             <!-- Space after Header Section -->
+
             <div class="header-space"></div>
 
             <!-- Admin Label with Green Background -->
