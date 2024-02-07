@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sundanianza</groupId>
+    <artifactId>ZKBPApp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>ZKBPApp</name>
+    <packaging>war</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <junit.version>5.9.1</junit.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zul -->
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zk -->
+
+
+
+        <!-- https://mvnrepository.com/artifact/org.zkoss.common/zcommon -->
+        <dependency>
+            <groupId>org.zkoss.common</groupId>
+            <artifactId>zcommon</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.zkoss.common/zel -->
+        <dependency>
+            <groupId>org.zkoss.common</groupId>
+            <artifactId>zel</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zhtml -->
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zhtml</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zkbind -->
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zkbind</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zkplus -->
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zkplus</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zul -->
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zul</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.common/zweb -->
+        <dependency>
+            <groupId>org.zkoss.common</groupId>
+            <artifactId>zweb</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zul -->
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zul</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zkoss.zk/zk -->
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zk</artifactId>
+            <version>9.6.0.1-jakarta</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <style>
+        .fixed-header-buttons {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        z-index: 9999;
+        }
+        .fixed-header-buttons-t {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+        }
+        .fixed-header-buttons-t-t {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        z-index: 9999;
+        }
+        .fixed-footer-buttons {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 9999;
+        }
+        .admin-label {
+
+        background-color: #9ccc07; /* Green background color */
+        color: white; /* White text color */
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px; /* Add padding for better appearance */
+        }
+        .header-space {
+        height: 50px; /* Adjust the height according to your preference */
+        }
+        .header-link {
+        color: #CDCD32; /* Lime green text color */
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 10px;
+        cursor: pointer; /* Add cursor style to indicate clickable */
+        }
+
+    </style>
+    <window>
+        <vlayout>
+
+
+
+            <!-- Header Section -->
+            <hbox class="fixed-header-buttons">
+                <label value="| Config" class="header-link" onClick="alert('Config clicked');" />
+                <label value="|Edit" class="header-link" onClick="alert('Edit clicked');" />
+                <label value="| Match" class="header-link" onClick="alert('Match clicked');" />
+                <label value="| ETL Control" class="header-link" onClick="alert('ETL Control clicked');" />
+                <label value="| Publish" class="header-link" onClick="alert('Publish clicked');" />
+                <label value="| CPM Posting" class="header-link" onClick="alert('CPM Posting clicked');" />
+            </hbox>
+
+            <hbox class="fixed-header-buttons-t" style="float: right;">
+                <label value="@{ 'Welcome back, ' + sessionScope.username }" />
+                <button label="Logout" />
+            </hbox>
+
+            <!-- Header Section to the Left -->
+
+
+            <hbox class="fixed-header-buttons-t-t">
+                <image src="/BP-Logo.png" width="80px" height="auto" />
+                <label value="BP" style="color: #CDCD32; font-size: 18px; font-weight: bold;" />
+                <label value="MI" style="color: #CDCD32; font-size: 18px; font-weight: bold;" />
+                <label value="Retail" style="color: #32CD32; font-size: 18px; font-weight: bold;" />
+            </hbox>
+
+            <!-- End of Header Section to the Left -->
+
+            <!-- End of Header Section -->
+
+            <!-- Space after Header Section -->
+            <div class="header-space"></div>
+
+            <!-- Admin Label with Green Background -->
+            <div class="admin-label">
+                User Administration
+            </div>
+
+            <tabbox width="100%" height="100%">
+                <tabs>
+                    <tab label="Action"></tab>
+                </tabs>
+                <tabpanels>
+                    <tabpanel>
+                        <listbox width="100%" height="100%" mold="paging" pageSize="4">
+                            <listhead>
+                                <listheader label="Actions" width="150px" />
+                                <listheader label="User Name" width="150px" />
+                                <listheader label="Name" width="200px" />
+                                <listheader label="Email" width="150px" />
+                                <listheader label="Role" width="150px" />
+                            </listhead>
+                            <listitem>
+                                <listcell>
+                                    <checkbox />
+                                </listcell>
+                                <listcell label="user1" />
+                                <listcell label="John Doe" />
+                                <listcell label="john.doe@email.com" />
+                                <listcell label="Administrator" />
+                                <listcell>
+                                    <button label="Edit" />
+                                </listcell>
+                            </listitem>
+
+                            <listitem>
+                                <listcell>
+                                    <checkbox />
+                                </listcell>
+                                <listcell label="user2" />
+                                <listcell label="John Doe" />
+                                <listcell label="john.doe@email.com" />
+                                <listcell label="Administrator" />
+                                <listcell>
+                                    <button label="Edit" />
+                                </listcell>
+                            </listitem>
+                            <listitem>
+                                <listcell>
+                                    <checkbox />
+                                </listcell>
+                                <listcell label="user3" />
+                                <listcell label="John Doe" />
+                                <listcell label="john.doe@email.com" />
+                                <listcell label="Administrator" />
+                                <listcell>
+                                    <button label="Edit" />
+                                </listcell>
+                            </listitem>
+                            <listitem>
+                                <listcell>
+                                    <checkbox />
+                                </listcell>
+                                <listcell label="user4" />
+                                <listcell label="John Doe" />
+                                <listcell label="john.doe@email.com" />
+                                <listcell label="Administrator" />
+                                <listcell>
+                                    <button label="Edit" />
+                                </listcell>
+                            </listitem>
+                            <listitem>
+                                <listcell>
+                                    <checkbox />
+                                </listcell>
+                                <listcell label="user5" />
+                                <listcell label="John Doe" />
+                                <listcell label="john.doe@email.com" />
+                                <listcell label="Administrator" />
+                                <listcell>
+                                    <button label="Edit" />
+                                </listcell>
+                            </listitem>
+
+                            <listitem>
+                                <listcell>
+                                    <checkbox />
+                                </listcell>
+                                <listcell label="user6" />
+                                <listcell label="John Doe" />
+                                <listcell label="john.doe@email.com" />
+                                <listcell label="Administrator" />
+                                <listcell>
+                                    <button label="Edit" />
+                                </listcell>
+                            </listitem>
+                            <!-- Add more list items as needed -->
+                        </listbox>
+                    </tabpanel>
+                </tabpanels>
+            </tabbox>
+            <vlayout>
+                <label value="User Detail" style="color: #32CD32; font-size: 18px; font-weight: bold; margin-bottom: 10px;" />
+                <grid>
+                    <columns>
+                        <column width="150px" />
+                        <column width="*" />
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Username:" />
+                            <textbox width="20%" />
+                        </row>
+                        <row>
+                            <label value="First Name:" />
+                            <textbox width="20%" />
+                        </row>
+                        <row>
+                            <label value="Last Name:" />
+                            <textbox width="20%" />
+                        </row>
+
+                        <row>
+                            <label value="Email:" />
+                            <textbox width="20%" />
+                        </row>
+                        <row>
+                            <label value="Role:" />
+                            <combobox>
+                                <comboitem label="Administrator" />
+                                <comboitem label="Data Steward" />
+                                <comboitem label="CPM User" />
+                            </combobox>
+                        </row>
+                        <row>
+                            <label value="Active:" />
+                            <checkbox />
+                        </row>
+                    </rows>
+                </grid>
+
+
+
+
+                <hbox class="fixed-footer-buttons"> <!-- Align the buttons to the bottom-right -->
+                    <button label="New" />
+                    <button label="Save" />
+                </hbox>
+            </vlayout>
+        </vlayout>
+    </window>
+</zk>
